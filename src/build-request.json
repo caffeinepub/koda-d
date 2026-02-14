@@ -1,0 +1,103 @@
+{
+  "kind": "build_request",
+  "title": "Add contact details, remove Caffeine attribution, and enhance agency credibility content",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Add a dedicated Contact section that is reachable from the site navigation and includes the agency email and WhatsApp number.\n\nInclude these exact contact details in the Contact section:\n- Email: dkoda911@gmail.com\n- WhatsApp: +1 626-875-4603\n\nThe Contact section must be accessible via a “Contact” option in the header navigation and must scroll to the Contact section when clicked (consistent with existing smooth-scroll behavior).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Give our email dkoda911@gmail.com ... give our whatsApp no. 6268754603 add this in contact option"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header navigation includes a “Contact” item in both desktop and mobile menus.",
+        "Clicking “Contact” smoothly scrolls to a section with id=\"contact\" (or equivalent) without routing changes.",
+        "The Contact section visibly displays the exact email “dkoda911@gmail.com” and WhatsApp number “+1 626-875-4603”.",
+        "Email is rendered as a mailto link and WhatsApp is rendered as a wa.me link (clickable)."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Remove the “Built with … using caffeine.ai” attribution block from the site footer and ensure the footer layout remains visually balanced after removal.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "remove build by caffeine ai at bottom"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No footer text or link referencing “caffeine.ai” appears anywhere in the UI.",
+        "Footer still displays the copyright line and does not look visually broken on mobile or desktop."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Improve the marketing site content so it feels more real, detailed, and impressive for an influencer marketing agency.\n\nUpdate/extend the existing marketing sections to add more credibility-oriented content (keep all text in English), such as:\n- A clearer services breakdown (for brands and for creators)\n- A more detailed process/timeline (what happens after someone applies)\n- Social proof placeholders (e.g., testimonial cards and/or “trusted by” logo placeholders) without claiming real brands or numbers\n- An FAQ section addressing common questions for brands and creators\n\nDo not remove the existing “How It Works”, “What We Offer”, or the application forms; enhance around them.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "made it look real and more impressive and ad more details you think it should be in it as a agency website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The homepage includes at least one new credibility-oriented section (e.g., FAQ) in addition to the existing sections.",
+        "Added content does not include unverifiable claims (no real client logos, brand names, or performance numbers unless provided by the user).",
+        "All new user-facing copy is in English and matches the site’s existing tone.",
+        "Existing application forms remain present and functional."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Update the footer “Get in Touch” area to include the same agency email and WhatsApp contact details (dkoda911@gmail.com, +1 626-875-4603) so users can contact Koda D without needing to fill the application forms.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "add this in contact option"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer contains clickable email (mailto) and WhatsApp (wa.me) links with the exact provided values.",
+        "Footer copy no longer implies that the only way to contact is via the application form."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Keep backend as a single Motoko actor; do not introduce additional backend services.",
+    "Use English for any user-facing text added or updated."
+  ],
+  "nonGoals": [
+    "Adding third-party contact integrations (e.g., WhatsApp API automation, email sending services).",
+    "Adding real-time chat or messaging features.",
+    "Adding new backend storage or endpoints for contact messages (beyond existing lead forms)."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

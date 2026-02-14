@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Website for Koda D influencer marketing agency to connect brands with creators, including forms for brands and creators to reach out.",
+  "architectural_notes": [
+    "Project is a website for an influencer marketing agency (Koda D) focused on connecting brands with creators.",
+    "Site must provide forms for both creators and brands to submit their details to reach the agency.",
+    "Contact section should present direct outreach channels (email and WhatsApp) prominently."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-public-marketing-website-for-koda-d-influencer-marketing-agency-that-clearly-explains-the-agency-s-purpose-connecting-brands-with-creators-helping-creators-grow-and-helping-brands-grow-awareness",
+      "title": "Create a public marketing website for “Koda D” (influencer marketing agency) that clearly explains the agency’s purpose: connecting brands with creators, helping creators grow, and helping brands grow awareness.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-two-distinct-lead-capture-forms-one-for-brands-and-one-for-creators-so-both-audiences-can-reach-koda-d-through-the-website",
+      "title": "Add two distinct lead-capture forms: one for Brands and one for Creators, so both audiences can reach Koda D through the website.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-the-minimum-required-fields-for-each-form-and-implement-client-side-validation-brand-form-fields-minimum-company-brand-name-contact-name-email-website-social-link-campaign-goals-budget-range-select-timeline-additional-notes-creator-form-fields-minimum-creator-name-email-primary-platform-select-handle-profile-link-niche-category-audience-size-range-select-location-free-text-additional-notes",
+      "title": "Define the minimum required fields for each form and implement client-side validation.\n\nBrand form fields (minimum): company/brand name, contact name, email, website/social link, campaign goals, budget range (select), timeline, additional notes.\n\nCreator form fields (minimum): creator name, email, primary platform (select), handle/profile link, niche/category, audience size range (select), location (free text), additional notes.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-connect-the-frontend-forms-to-the-backend-submission-endpoints-using-the-existing-actor-agent-pattern-and-handle-loading-error-states",
+      "title": "Connect the frontend forms to the backend submission endpoints using the existing actor/agent pattern, and handle loading + error states.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-consistent-creative-visual-theme-for-the-site-colors-typography-spacing-components-appropriate-for-a-premium-influencer-marketing-agency-and-apply-it-across-all-pages-sections-avoid-a-blue-purple-primary-palette",
+      "title": "Add a consistent, creative visual theme for the site (colors, typography, spacing, components) appropriate for a premium influencer marketing agency, and apply it across all pages/sections. Avoid a blue/purple primary palette.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-basic-navigation-and-page-section-structure-so-users-can-quickly-access-home-for-brands-for-creators-and-contact-apply-forms",
+      "title": "Create basic navigation and page/section structure so users can quickly access: Home, For Brands, For Creators, and Contact/Apply (forms).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-minimal-brand-assets-as-static-images-for-the-site-a-koda-d-wordmark-logo-and-a-homepage-hero-illustration-background-and-render-them-from-frontend-public-assets-generated-do-not-fetch-via-backend",
+      "title": "Generate and include minimal brand assets as static images for the site: a Koda D wordmark/logo and a homepage hero illustration/background, and render them from frontend/public/assets/generated (do not fetch via backend).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-dedicated-contact-section-that-is-reachable-from-the-site-navigation-and-includes-the-agency-email-and-whatsapp-number-include-these-exact-contact-details-in-the-contact-section-email-dkoda911-gmail-com-whatsapp-1-626-875-4603-the-contact-section-must-be-accessible-via-a-contact-option-in-the-header-navigation-and-must-scroll-to-the-contact-section-when-clicked-consistent-with-existing-smooth-scroll-behavior",
+      "title": "Add a dedicated Contact section that is reachable from the site navigation and includes the agency email and WhatsApp number.\n\nInclude these exact contact details in the Contact section:\n- Email: dkoda911@gmail.com\n- WhatsApp: +1 626-875-4603\n\nThe Contact section must be accessible via a “Contact” option in the header navigation and must scroll to the Contact section when clicked (consistent with existing smooth-scroll behavior).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-built-with-using-caffeine-ai-attribution-block-from-the-site-footer-and-ensure-the-footer-layout-remains-visually-balanced-after-removal",
+      "title": "Remove the “Built with … using caffeine.ai” attribution block from the site footer and ensure the footer layout remains visually balanced after removal.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-improve-the-marketing-site-content-so-it-feels-more-real-detailed-and-impressive-for-an-influencer-marketing-agency-update-extend-the-existing-marketing-sections-to-add-more-credibility-oriented-content-keep-all-text-in-english-such-as-a-clearer-services-breakdown-for-brands-and-for-creators-a-more-detailed-process-timeline-what-happens-after-someone-applies-social-proof-placeholders-e-g-testimonial-cards-and-or-trusted-by-logo-placeholders-without-claiming-real-brands-or-numbers-an-faq-section-addressing-common-questions-for-brands-and-creators-do-not-remove-the-existing-how-it-works-what-we-offer-or-the-application-forms-enhance-around-them",
+      "title": "Improve the marketing site content so it feels more real, detailed, and impressive for an influencer marketing agency.\n\nUpdate/extend the existing marketing sections to add more credibility-oriented content (keep all text in English), such as:\n- A clearer services breakdown (for brands and for creators)\n- A more detailed process/timeline (what happens after someone applies)\n- Social proof placeholders (e.g., testimonial cards and/or “trusted by” logo placeholders) without claiming real brands or numbers\n- An FAQ section addressing common questions for brands and creators\n\nDo not remove the existing “How It Works”, “What We Offer”, or the application forms; enhance around them.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-get-in-touch-area-to-include-the-same-agency-email-and-whatsapp-contact-details-dkoda911-gmail-com-1-626-875-4603-so-users-can-contact-koda-d-without-needing-to-fill-the-application-forms",
+      "title": "Update the footer “Get in Touch” area to include the same agency email and WhatsApp contact details (dkoda911@gmail.com, +1 626-875-4603) so users can contact Koda D without needing to fill the application forms.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create Koda D marketing website with lead capture forms for brands and creators to contact/apply",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement backend endpoints to receive and persist Brand and Creator form submissions in the single Motoko actor, including timestamps and a submission type (brand/creator).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update Contact option to include agency email (dkoda911@gmail.com) and WhatsApp number (+1 626-875-4603)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Remove “build by caffeine ai” text from site footer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Improve site realism and credibility with more detailed agency website content and more impressive presentation (e.g., services, process, social proof, FAQs)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Koda D",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

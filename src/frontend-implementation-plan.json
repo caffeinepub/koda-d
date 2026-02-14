@@ -1,0 +1,101 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add contact section, remove footer attribution, and enhance agency credibility content",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Add a dedicated Contact section and wire it into header navigation with smooth scrolling.",
+      "acceptanceCriteria": [
+        "Header navigation includes a “Contact” item in both desktop and mobile menus.",
+        "Clicking “Contact” smoothly scrolls to a section with id=\"contact\" (or equivalent) without routing changes.",
+        "The Contact section visibly displays the exact email “dkoda911@gmail.com” and WhatsApp number “+1 626-875-4603”.",
+        "Email is rendered as a mailto link and WhatsApp is rendered as a wa.me link (clickable)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/marketing/ContactSection.tsx",
+          "operation": "create",
+          "description": "Create a new Contact section with id=\"contact\" that displays dkoda911@gmail.com (as a mailto link) and +1 626-875-4603 (as a wa.me link). Use existing styling patterns and (optionally) shadcn-ui Card/Button primitives for consistent UI; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the new ContactSection in the main page flow (no new routes) so it is reachable by smooth scroll navigation."
+        },
+        {
+          "path": "frontend/src/components/marketing/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Add a “Contact” item to both desktop and mobile nav items that calls the existing smooth scroll helper to scroll to \"contact\"."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Remove the caffeine.ai attribution from the footer and keep the footer layout balanced.",
+      "acceptanceCriteria": [
+        "No footer text or link referencing “caffeine.ai” appears anywhere in the UI.",
+        "Footer still displays the copyright line and does not look visually broken on mobile or desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/marketing/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Remove the “Built with … using caffeine.ai” attribution block (including icon/link and related variables) and adjust footer layout/alignment so the remaining content looks balanced across breakpoints."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Enhance homepage marketing content with more detailed, credibility-oriented sections (services breakdown, process/timeline, social proof placeholders, and FAQ) while keeping existing sections and forms.",
+      "acceptanceCriteria": [
+        "The homepage includes at least one new credibility-oriented section (e.g., FAQ) in addition to the existing sections.",
+        "Added content does not include unverifiable claims (no real client logos, brand names, or performance numbers unless provided by the user).",
+        "All new user-facing copy is in English and matches the site’s existing tone.",
+        "Existing application forms remain present and functional."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/marketing/ServicesBreakdownSection.tsx",
+          "operation": "create",
+          "description": "Add a credibility-focused section that clearly breaks down services for Brands vs Creators (all English, no unverifiable claims). Use existing UI patterns (e.g., shadcn-ui Card) for layout consistency; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/marketing/ProcessTimelineSection.tsx",
+          "operation": "create",
+          "description": "Add a detailed process/timeline section describing what happens after someone applies (steps, typical sequence, what information is needed). Keep copy realistic and non-claiming. Use existing UI patterns (e.g., Cards/list styling); verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/marketing/SocialProofSection.tsx",
+          "operation": "create",
+          "description": "Add social proof placeholders (e.g., testimonial cards and/or “trusted by” logo placeholders) explicitly labeled as placeholders without real brand names or performance numbers. Use existing UI patterns (e.g., shadcn-ui Card); verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/marketing/FaqSection.tsx",
+          "operation": "create",
+          "description": "Add an FAQ section answering common questions for brands and creators. Implement with accessible markup (e.g., native details/summary or simple toggles) and keep all copy in English. If using any shadcn-ui primitives, verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/marketing/Sections.tsx",
+          "operation": "modify",
+          "description": "Wire the new credibility-oriented sections into the existing marketing flow without removing “How It Works” or “What We Offer”. Ensure ids/spacing match the site’s scroll and layout conventions. If using shadcn-ui Card already in this file, verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Update the footer “Get in Touch” area to include clickable email and WhatsApp contact details and remove copy implying forms are the only contact path.",
+      "acceptanceCriteria": [
+        "Footer contains clickable email (mailto) and WhatsApp (wa.me) links with the exact provided values.",
+        "Footer copy no longer implies that the only way to contact is via the application form."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/marketing/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Update the “Get in Touch” column to include clickable mailto:dkoda911@gmail.com and wa.me link for +1 626-875-4603, and revise the supporting copy so it does not imply the application form is the only contact method. Optionally add a “Contact” quick link that smooth-scrolls to the contact section."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes the marketing site layout with header, hero, sections (including new credibility sections), lead capture forms, contact section, and footer.",
+  "frontend/src/components/marketing/Hero.tsx": "Hero section component featuring the Koda D wordmark, headline, description, and CTA buttons with background image and overlay.",
+  "frontend/src/components/marketing/SiteHeader.tsx": "Responsive navigation header with logo and smooth-scrolling links to key sections including the new Contact link, with mobile menu using Sheet component.",
+  "frontend/src/components/marketing/SiteFooter.tsx": "Footer component with quick links, branding, and direct contact information (email and WhatsApp) without caffeine.ai attribution.",
+  "frontend/src/components/marketing/Sections.tsx": "Marketing sections container that includes How It Works, What We Offer, and imports all new credibility-focused sections (services breakdown, process timeline, social proof, and FAQ).",
+  "frontend/src/components/marketing/LeadCapture.tsx": "Lead capture section with tabbed interface to switch between brand and creator application forms.",
+  "frontend/src/components/marketing/forms/BrandLeadForm.tsx": "Brand application form with validation for company name, contact info, campaign goals, budget range, timeline, and notes; connects to backend via useLeadSubmission hook.",
+  "frontend/src/components/marketing/forms/CreatorLeadForm.tsx": "Creator application form with validation for name, email, platform, handle, niche, audience size, location, and notes; connects to backend via useLeadSubmission hook.",
+  "frontend/src/components/marketing/SubmissionFeedback.tsx": "Reusable feedback component displaying success or error alerts after form submission using shadcn Alert component.",
+  "frontend/src/components/marketing/InlineFieldError.tsx": "Small helper component for displaying field-level validation error messages with icon.",
+  "frontend/src/hooks/useLeadSubmission.ts": "Custom hook managing brand and creator form submissions to backend, handling loading states, errors, and success feedback.",
+  "frontend/src/lib/validation.ts": "Validation utility functions for required fields and email format checking.",
+  "frontend/src/lib/formOptions.ts": "Centralized form select options for budget ranges, timelines, platforms, and audience sizes.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using warm charcoal/cream base palette with amber/coral accents for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with Inter font family and custom color tokens mapped to CSS variables.",
+  "frontend/src/components/marketing/ContactSection.tsx": "Dedicated contact section with email and WhatsApp contact cards, response time information, and working hours details.",
+  "frontend/src/components/marketing/ServicesBreakdownSection.tsx": "Detailed breakdown of services offered to brands and creators with specific feature cards for each audience segment.",
+  "frontend/src/components/marketing/ProcessTimelineSection.tsx": "Step-by-step timeline showing the onboarding process from application to ongoing support with duration estimates.",
+  "frontend/src/components/marketing/SocialProofSection.tsx": "Social proof section with testimonial cards and representative statistics, clearly labeled as illustrative placeholders.",
+  "frontend/src/components/marketing/FaqSection.tsx": "FAQ section with accordion-style questions and answers for both brands and creators using shadcn Accordion component."
+}

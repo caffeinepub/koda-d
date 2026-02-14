@@ -1,0 +1,83 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-dedicated-contact-section-that-is-reachable-from-the-site-navigation-and-includes-the-agency-email-and-whatsapp-number-include-these-exact-contact-details-in-the-contact-section-email-dkoda911-gmail-com-whatsapp-1-626-875-4603-the-contact-section-must-be-accessible-via-a-contact-option-in-the-header-navigation-and-must-scroll-to-the-contact-section-when-clicked-consistent-with-existing-smooth-scroll-behavior",
+      "featureTitle": "Add a dedicated Contact section that is reachable from the site navigation and includes the agency email and WhatsApp number.\n\nInclude these exact contact details in the Contact section:\n- Email: dkoda911@gmail.com\n- WhatsApp: +1 626-875-4603\n\nThe Contact section must be accessible via a “Contact” option in the header navigation and must scroll to the Contact section when clicked (consistent with existing smooth-scroll behavior).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/marketing/ContactSection.tsx",
+        "frontend/src/components/marketing/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-remove-the-built-with-using-caffeine-ai-attribution-block-from-the-site-footer-and-ensure-the-footer-layout-remains-visually-balanced-after-removal",
+      "featureTitle": "Remove the “Built with … using caffeine.ai” attribution block from the site footer and ensure the footer layout remains visually balanced after removal.",
+      "files": [
+        "frontend/src/components/marketing/SiteFooter.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-improve-the-marketing-site-content-so-it-feels-more-real-detailed-and-impressive-for-an-influencer-marketing-agency-update-extend-the-existing-marketing-sections-to-add-more-credibility-oriented-content-keep-all-text-in-english-such-as-a-clearer-services-breakdown-for-brands-and-for-creators-a-more-detailed-process-timeline-what-happens-after-someone-applies-social-proof-placeholders-e-g-testimonial-cards-and-or-trusted-by-logo-placeholders-without-claiming-real-brands-or-numbers-an-faq-section-addressing-common-questions-for-brands-and-creators-do-not-remove-the-existing-how-it-works-what-we-offer-or-the-application-forms-enhance-around-them",
+      "featureTitle": "Improve the marketing site content so it feels more real, detailed, and impressive for an influencer marketing agency.\n\nUpdate/extend the existing marketing sections to add more credibility-oriented content (keep all text in English), such as:\n- A clearer services breakdown (for brands and for creators)\n- A more detailed process/timeline (what happens after someone applies)\n- Social proof placeholders (e.g., testimonial cards and/or “trusted by” logo placeholders) without claiming real brands or numbers\n- An FAQ section addressing common questions for brands and creators\n\nDo not remove the existing “How It Works”, “What We Offer”, or the application forms; enhance around them.",
+      "files": [
+        "frontend/src/components/marketing/FaqSection.tsx",
+        "frontend/src/components/marketing/ProcessTimelineSection.tsx",
+        "frontend/src/components/marketing/Sections.tsx",
+        "frontend/src/components/marketing/ServicesBreakdownSection.tsx",
+        "frontend/src/components/marketing/SocialProofSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-footer-get-in-touch-area-to-include-the-same-agency-email-and-whatsapp-contact-details-dkoda911-gmail-com-1-626-875-4603-so-users-can-contact-koda-d-without-needing-to-fill-the-application-forms",
+      "featureTitle": "Update the footer “Get in Touch” area to include the same agency email and WhatsApp contact details (dkoda911@gmail.com, +1 626-875-4603) so users can contact Koda D without needing to fill the application forms.",
+      "files": [
+        "frontend/src/components/marketing/SiteFooter.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
